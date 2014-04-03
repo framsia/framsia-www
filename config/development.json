@@ -1,0 +1,15 @@
+{
+	"cssFiles" : [
+        "/css/style.css"
+    ],
+    "jsFiles" : [
+        "/js/lib/derp-modules.js",
+        "/js/lib/tag.js",
+        "/js/lib/dom.js",
+        "/js/twitter.utils.js",
+        "/js/twitter.js",
+        "/js/ws.utils.js",
+        "/js/ws.connection.js",
+        "/js/init.js"
+    ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "framsia-www",
+  "version": "0.0.1",
+  "author": {
+    "name": "Framsia",
+    "email": "kontor@framsia.no"
+  },
+  "description": "The Framsia web site",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:framsia/framsia-www.git"
+  },
+  "keywords": [
+    "meetup",
+    "javascript",
+    "html5",
+    "css",
+    "web"
+  ],
+  "homepage": "https://www.webrebels.org/",
+  "scripts": {
+    "pretest": "jshint ./bin/*.js ./bin/twitter/lib/*.js ./gulpfile.js ./public/src/js/lib/*.js ./public/src/js/*.js",
+    "test": "mocha ./test/*.js --reporter spec",
+    "start": "node ./bin/server.js",
+    "minify": "gulp"
+  },
+  "contributors": [
+    {
+      "name": "Trygve Lie",
+      "email": "post@trygve-lie.com"
+    }
+  ],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "bugs": {
+    "url": "https://github.com/framsia/framsia-www/issues"
+  },
+  "licenses": [],
+  "subdomain": "framsia",
+  "domains": [
+    "www.framsia.no",
+    "framsia.no"
+  ],
+  "devDependencies": {
+    "jshint": "latest",
+    "mocha": "latest",
+    "chai": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-minify-css": "latest"
+  },
+  "dependencies": {
+    "serve-static" : "1.0.x",
+    "compression": "1.0.x",
+    "websocket": "1.0.x",
+    "winston": "0.7.x",
+    "convict": "0.4.x",
+    "express": "4.x",
+    "uuid": "1.4.x",
+    "twit": "1.1.x",
+    "ejs": "0.8.x"
+  }
+}
